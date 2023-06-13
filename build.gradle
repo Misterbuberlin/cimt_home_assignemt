@@ -18,6 +18,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'com.fasterxml.jackson.core:jackson-databind'
+	implementation 'org.apache.logging.log4j:log4j-spring-cloud-config-client:2.14.1'
 	testImplementation 'org.hamcrest:hamcrest-all:1.3'
 }
 

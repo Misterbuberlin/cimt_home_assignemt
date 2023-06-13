@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.example.cimt;
 
 import java.util.Arrays;
 

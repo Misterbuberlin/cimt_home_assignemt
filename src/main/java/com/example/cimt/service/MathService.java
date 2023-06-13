@@ -1,4 +1,4 @@
-package com.example.springboot.service;
+package com.example.cimt.service;
 
 import org.springframework.stereotype.Service;
 
@@ -36,7 +36,7 @@ public class MathService {
 
         val1 = Math.abs(val1);
         val2 = Math.abs(val2);
-
+        //euclidian algorithm
         while (val2 != 0) {
             int temp = val2;
             val2 = val1 % val2;

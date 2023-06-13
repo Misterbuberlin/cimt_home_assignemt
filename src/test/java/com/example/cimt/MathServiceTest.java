@@ -1,6 +1,6 @@
-package com.example.springboot;
+package com.example.cimt;
 
-import com.example.springboot.service.MathService;
+import com.example.cimt.service.MathService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,7 +1,7 @@
-package com.example.springboot.controller;
+package com.example.cimt.controller;
 
-import com.example.springboot.dto.GcdRequestBody;
-import com.example.springboot.service.MathService;
+import com.example.cimt.dto.GcdRequestBody;
+import com.example.cimt.service.MathService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

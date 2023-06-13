@@ -1,6 +1,6 @@
-package com.example.springboot;
+package com.example.cimt;
 
-import com.example.springboot.dto.GcdRequestBody;
+import com.example.cimt.dto.GcdRequestBody;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

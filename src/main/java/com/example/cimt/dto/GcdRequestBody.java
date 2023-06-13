@@ -1,4 +1,4 @@
-package com.example.springboot.dto;
+package com.example.cimt.dto;
 
 import jakarta.validation.constraints.NotNull;
 
@@ -9,7 +9,6 @@ public class GcdRequestBody {
     private Integer val1;
 
     @NotNull
-   // @DecimalMin(value = "0.1", inclusive = false, message = "Value must be greater than zero")
     private Integer val2;
 
     public Integer getVal1() {

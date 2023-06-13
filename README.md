@@ -1,5 +1,4 @@
-###
-Implements a REST application with two endpoints:
+#Implements a REST application with two endpoints:
 
 one that returns a fibonnaci number, given its position. Example of how to query the fibonacci endpoint: curl -H "Content-Type: application/json" -X GET http://localhost:8080/values/fibonacci/7
 

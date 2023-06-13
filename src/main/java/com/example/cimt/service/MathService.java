@@ -1,5 +1,6 @@
 package com.example.cimt.service;
 
+import io.micrometer.observation.GlobalObservationConvention;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -45,6 +46,7 @@ public class MathService {
         value1 = Math.abs(value1);
         value2 = Math.abs(value2);
         value1 = runEuclidianAlgorithm(value1, value2);
+        logger.info("The greatest common denominator for {} and {} is {}.", value1, value2, value1);
         return value1;
     }
 

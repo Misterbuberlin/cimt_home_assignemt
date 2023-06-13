@@ -4,3 +4,6 @@ Implements a REST application  with two endpoints:
 
 - The other one returns the greatest common denominator, given two values. Example of how to test the endpoint:  curl -H "Content-Type: application/json" -X POST -d '{"val1": -12, "val2": 18}' http://localhost:8080/values/gcd
 
+# how to clone the code repository 
+open a terminal and run *git clone --branch master https://github.com/Misterbuberlin/cimt_home_assignemt.git* (you must have installed git)
+

@@ -19,17 +19,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class MathControllerTest {
 
     @Autowired
-    private MockMvc mvc;
-
-    @Autowired
     ObjectMapper objectMapper;
+    @Autowired
+    private MockMvc mvc;
 
     @Test
     void testGcdHandlerMethod() throws Exception {
 
         GcdRequestBody gcdRequestBody = new GcdRequestBody();
-        gcdRequestBody.setVal1(42);
-        gcdRequestBody.setVal2(140);
+        gcdRequestBody.setVal1(String.valueOf(42));
+        gcdRequestBody.setVal2(String.valueOf(140));
         mvc.perform(MockMvcRequestBuilders.post("/values/gcd")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(gcdRequestBody)))

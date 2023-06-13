@@ -44,7 +44,6 @@ public class MathService {
 
         value1 = Math.abs(value1);
         value2 = Math.abs(value2);
-        //euclidian algorithm
         value1 = runEuclidianAlgorithm(value1, value2);
         return value1;
     }

@@ -32,18 +32,6 @@ public class MathService {
         return current;
     }
 
-    private BigInteger fibonacci(int n) {
-        BigInteger a = BigInteger.ZERO;
-        BigInteger b = BigInteger.ONE;
-
-        for (int i = 2; i <= n; i++) {
-            BigInteger temp = a.add(b);
-            a = b;
-            b = temp;
-        }
-        return a;
-    }
-
     public int calculateGcd(String val1, String val2) {
         int value1 = Integer.parseInt(val1);
         int value2 = Integer.parseInt(val2);

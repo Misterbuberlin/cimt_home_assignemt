@@ -1,9 +1,11 @@
-package com.example.cimt;
+package com.example.cimt.math.service;
 
-import com.example.cimt.service.MathService;
+import com.example.cimt.math.app.service.MathService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.math.BigInteger;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -21,10 +23,10 @@ public class MathServiceFiboTest {
 
     @Test
     public void testFibonacci() throws Exception {
-        assertThat(mathService.calculateFiboValue(1), is(equalTo(1)));
-        assertThat(mathService.calculateFiboValue(2), is(equalTo(1)));
-        assertThat(mathService.calculateFiboValue(7), is(equalTo(13)));
-        assertThat(mathService.calculateFiboValue(10), is(equalTo(55)));
+        assertThat(mathService.calculateFiboValue(1), is(equalTo(BigInteger.ONE)));
+        assertThat(mathService.calculateFiboValue(2), is(equalTo(BigInteger.ONE)));
+        assertThat(mathService.calculateFiboValue(7), is(equalTo(BigInteger.valueOf(13))));
+        assertThat(mathService.calculateFiboValue(10), is(equalTo(BigInteger.valueOf(55))));
 
     }
 

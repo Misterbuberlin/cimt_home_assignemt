@@ -1,7 +1,7 @@
-package com.example.cimt.controller;
+package com.example.cimt.math.app.controller;
 
-import com.example.cimt.dto.GcdRequestBody;
-import com.example.cimt.service.MathService;
+import com.example.cimt.math.app.dto.GcdRequestBody;
+import com.example.cimt.math.app.service.MathService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

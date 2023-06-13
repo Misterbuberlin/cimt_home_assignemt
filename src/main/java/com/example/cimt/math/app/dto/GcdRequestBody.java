@@ -1,4 +1,4 @@
-package com.example.cimt.dto;
+package com.example.cimt.math.app.dto;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

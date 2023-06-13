@@ -1,6 +1,6 @@
-package com.example.cimt;
+package com.example.cimt.math.service;
 
-import com.example.cimt.dto.GcdRequestBody;
+import com.example.cimt.math.app.dto.GcdRequestBody;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -14,7 +14,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"val1": -12, "val2": 18}' 
 
 ## How to clone the spring-boot project
 
-To clone this project to your local computer, run 
+To clone this project to your local computer, run  
 'git clone https://github.com/Misterbuberlin/cimt_home_assignemt.git'
 
 ## How to run the service on your local computer

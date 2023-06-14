@@ -9,8 +9,8 @@ public class GcdRequestBody {
 
 
     @NotNull(message = "Number is required")
-    @Min(value = Integer.MIN_VALUE, message = "Number must be a positive integer")
-    @Max(value = Integer.MAX_VALUE, message = "Number must be within the range of integers")
+    @Min(value = Integer.MIN_VALUE, message = "the min possible value must be -2 147 483 648")
+    @Max(value = Integer.MAX_VALUE, message = "the greatest possible value must be 2 147 483 647")
     @Positive(message = "Number must be a integer")
     private String val1;
 

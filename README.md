@@ -4,7 +4,7 @@
 
 This is an implementation of a REST application service with two endpoints:
 
-one that returns a fibonnaci number, given its position.
+one that returns a fibonnaci number, given its position (a positive integer value).
 Example of how to query the fibonacci endpoint:
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/values/fibonacci/7
 

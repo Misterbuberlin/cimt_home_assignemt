@@ -1,6 +1,5 @@
 package com.example.cimt.math.app.service;
 
-import com.example.cimt.math.app.service.MathService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,17 +22,17 @@ public class MathServiceFiboTest {
 
     @Test
     public void testFibonacci() {
-        assertThat(mathService.calculateFiboValue(1), is(equalTo(BigInteger.ONE)));
-        assertThat(mathService.calculateFiboValue(2), is(equalTo(BigInteger.ONE)));
-        assertThat(mathService.calculateFiboValue(7), is(equalTo(BigInteger.valueOf(13))));
-        assertThat(mathService.calculateFiboValue(10), is(equalTo(BigInteger.valueOf(55))));
+        assertThat(mathService.calculateFiboValue(BigInteger.ONE), is(equalTo(BigInteger.ONE)));
+        assertThat(mathService.calculateFiboValue(BigInteger.TWO), is(equalTo(BigInteger.ONE)));
+        assertThat(mathService.calculateFiboValue(BigInteger.valueOf(3)), is(equalTo(BigInteger.TWO)));
+        assertThat(mathService.calculateFiboValue(BigInteger.valueOf(7)), is(equalTo(BigInteger.valueOf(13))));
+        assertThat(mathService.calculateFiboValue(BigInteger.TEN), is(equalTo(BigInteger.valueOf(55))));
 
     }
 
     @Test
-
     public void testFibonacciPositionZero_ThrowsIllegalArgumentException() {
-        int invalidFibonacciPosition = 0;
+        BigInteger invalidFibonacciPosition = BigInteger.ZERO;
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             mathService.calculateFiboValue(invalidFibonacciPosition);
         });

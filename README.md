@@ -4,7 +4,7 @@
 
 This is an implementation of a REST application service with two endpoints:
 
-one that returns a fibonnaci number, given its position (a positive integer value).
+one that returns a fibonnaci number, given its position (a positive big integer value).
 Example of how to query the fibonacci endpoint:
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/values/fibonacci/7
 
@@ -18,6 +18,7 @@ To clone this project to your local computer, run
 'git clone https://github.com/Misterbuberlin/cimt_home_assignemt.git'
 
 ## How to run the service on your local computer
+
 To run the application, run ./gradlew bootRun and check if application is up and running
 at http://localhost:8080/actuator/health
 Please note you can use the application.yaml to configure another server port, in case 8080 is already in use.

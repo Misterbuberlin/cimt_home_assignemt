@@ -1,6 +1,5 @@
 package com.example.cimt.math.app.service;
 
-import com.example.cimt.math.app.service.MathService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -41,7 +40,7 @@ public class MathServiceGcdTest {
     }
 
     @Test
-    public void testGcdBothValuesAreNegative()  {
+    public void testGcdBothValuesAreNegative() {
         int result = mathService.calculateGcd("-42", "-140");
         assertThat(result, is(equalTo(14)));
         result = mathService.calculateGcd("-140", "-42");

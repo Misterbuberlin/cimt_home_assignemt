@@ -12,18 +12,23 @@ public class MathService {
     private static final Logger logger
             = LoggerFactory.getLogger(MathService.class);
 
-    public BigInteger calculateFiboValue(int position) {
-        if (position <= 0) {
+    public BigInteger calculateFiboValue(BigInteger position) {
+        if (position.compareTo(BigInteger.ZERO) <= 0) {
             throw new IllegalArgumentException("Die Position muss größer sein als 0.");
         }
         logger.info("Please wait... Currently computing the fibonacci value at {} ", position);
-        if (position == 1 || position == 2) {
+        if (position.equals(BigInteger.ONE) || position.equals(BigInteger.TWO)) {
             return BigInteger.valueOf(1);
         }
 
         BigInteger previous = BigInteger.valueOf(1);
         BigInteger current = BigInteger.valueOf(1);
-        for (int i = 3; i <= position; i++) {
+
+        BigInteger start = BigInteger.valueOf(3);
+        BigInteger end = position;
+        BigInteger step = BigInteger.ONE;
+
+        for (BigInteger counter = start; counter.compareTo(end) <= 0; counter = counter.add(step)) {
             BigInteger next = previous.add(current);
             previous = current;
             current = next;

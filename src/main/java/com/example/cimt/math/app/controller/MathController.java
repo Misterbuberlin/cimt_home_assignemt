@@ -18,7 +18,7 @@ public class MathController {
 
 
     @GetMapping("/fibonacci/{position}")
-    public ResponseEntity<BigInteger> getFibonacciNumber(@PathVariable int position) {
+    public ResponseEntity<BigInteger> getFibonacciNumber(@PathVariable BigInteger position) {
         BigInteger fiboValue = mathService.calculateFiboValue(position);
         return ResponseEntity.ok(fiboValue);
     }

@@ -1,4 +1,4 @@
-package com.example.cimt.math.service;
+package com.example.cimt.math.app.controller;
 
 import com.example.cimt.math.app.dto.GcdRequestBody;
 import com.fasterxml.jackson.databind.ObjectMapper;

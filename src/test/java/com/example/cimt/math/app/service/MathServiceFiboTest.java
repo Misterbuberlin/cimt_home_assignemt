@@ -1,4 +1,4 @@
-package com.example.cimt.service;
+package com.example.cimt.math.app.service;
 
 import com.example.cimt.math.app.service.MathService;
 import org.junit.jupiter.api.Assertions;
@@ -22,7 +22,7 @@ public class MathServiceFiboTest {
     }
 
     @Test
-    public void testFibonacci() throws Exception {
+    public void testFibonacci() {
         assertThat(mathService.calculateFiboValue(1), is(equalTo(BigInteger.ONE)));
         assertThat(mathService.calculateFiboValue(2), is(equalTo(BigInteger.ONE)));
         assertThat(mathService.calculateFiboValue(7), is(equalTo(BigInteger.valueOf(13))));

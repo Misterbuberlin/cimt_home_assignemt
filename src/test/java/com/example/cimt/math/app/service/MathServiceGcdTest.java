@@ -1,4 +1,4 @@
-package com.example.cimt.service;
+package com.example.cimt.math.app.service;
 
 import com.example.cimt.math.app.service.MathService;
 import org.junit.jupiter.api.Assertions;
@@ -20,7 +20,7 @@ public class MathServiceGcdTest {
     }
 
     @Test
-    public void testGcdFirstValIsZero() throws Exception {
+    public void testGcdFirstValIsZero() {
         int result = mathService.calculateGcd("0", "1");
         assertThat(result, is(equalTo(1)));
     }
@@ -33,7 +33,7 @@ public class MathServiceGcdTest {
     }
 
     @Test
-    public void testGcdBothValuesArePositive() throws Exception {
+    public void testGcdBothValuesArePositive() {
         int result = mathService.calculateGcd("42", "140");
         assertThat(result, is(equalTo(14)));
         result = mathService.calculateGcd("140", "42");
@@ -41,7 +41,7 @@ public class MathServiceGcdTest {
     }
 
     @Test
-    public void testGcdBothValuesAreNegative() throws Exception {
+    public void testGcdBothValuesAreNegative()  {
         int result = mathService.calculateGcd("-42", "-140");
         assertThat(result, is(equalTo(14)));
         result = mathService.calculateGcd("-140", "-42");

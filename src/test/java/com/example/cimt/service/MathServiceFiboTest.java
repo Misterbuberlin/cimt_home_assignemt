@@ -1,4 +1,4 @@
-package com.example.cimt.math.service;
+package com.example.cimt.service;
 
 import com.example.cimt.math.app.service.MathService;
 import org.junit.jupiter.api.Assertions;

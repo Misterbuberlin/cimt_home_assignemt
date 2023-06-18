@@ -14,7 +14,7 @@ import java.math.BigInteger;
 public class MathController {
 
     @Autowired
-    MathService mathService;
+    private MathService mathService;
 
 
     @GetMapping("/fibonacci/{position}")

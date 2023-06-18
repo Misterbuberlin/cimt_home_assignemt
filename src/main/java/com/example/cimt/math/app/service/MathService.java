@@ -49,9 +49,11 @@ public class MathService {
 
         value1 = Math.abs(value1);
         value2 = Math.abs(value2);
-        value1 = runEuclidianAlgorithm(value1, value2);
+        BigInteger v1 = BigInteger.valueOf(value1);
+        BigInteger v2 = BigInteger.valueOf(value2);
+        BigInteger gcd = v1.gcd(v2);
         logger.info("The greatest common denominator for {} and {} is {}.", value1, value2, value1);
-        return value1;
+        return gcd.intValue();
     }
 
     private int runEuclidianAlgorithm(int val1, int val2) {

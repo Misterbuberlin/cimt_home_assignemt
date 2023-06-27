@@ -14,11 +14,11 @@ import java.math.BigInteger;
 public class MathController {
 
     @Autowired
-    MathService mathService;
+    private MathService mathService;
 
 
     @GetMapping("/fibonacci/{position}")
-    public ResponseEntity<BigInteger> getFibonacciNumber(@PathVariable int position) {
+    public ResponseEntity<BigInteger> getFibonacciNumber(@PathVariable BigInteger position) {
         BigInteger fiboValue = mathService.calculateFiboValue(position);
         return ResponseEntity.ok(fiboValue);
     }

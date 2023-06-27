@@ -37,9 +37,9 @@ public class MathService {
         return current;
     }
 
-    public int calculateGcd(String val1, String val2) {
-        int value1 = Integer.parseInt(val1);
-        int value2 = Integer.parseInt(val2);
+    public int calculateGcd(String firstVal, String secondVal) {
+        int value1 = Integer.parseInt(firstVal);
+        int value2 = Integer.parseInt(secondVal);
         if (value2 == 0) {
             throw new IllegalArgumentException("val2 muss ungleich 0 sein.");
         }
@@ -52,17 +52,8 @@ public class MathService {
         BigInteger v1 = BigInteger.valueOf(value1);
         BigInteger v2 = BigInteger.valueOf(value2);
         BigInteger gcd = v1.gcd(v2);
-        logger.info("The greatest common denominator for {} and {} is {}.", value1, value2, value1);
+        logger.info("The greatest common denominator for {} and {} is {}.", value1, value2, gcd);
         return gcd.intValue();
-    }
-
-    private int runEuclidianAlgorithm(int val1, int val2) {
-        while (val2 != 0) {
-            int temp = val2;
-            val2 = val1 % val2;
-            val1 = temp;
-        }
-        return val1;
     }
 
 }
